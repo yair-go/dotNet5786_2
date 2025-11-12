@@ -7,7 +7,7 @@ namespace DO;
 /// format checks, id sequencing, etc.) must be performed in the business/logical layer; the DAL
 /// assumes values it receives are already valid.
 /// </summary>
-internal record Order(
+public record Order(
     int Id,                         // מספר הזמנה ייחודי (לא ניתן לעדכון)
     OrderType Type,                 // סוג הזמנה (נקבע/מנוהל על ידי מנהל)
        string Address,                 // כתובת מלאה תקינה (DAL מכיל רק הזמנות עם כתובת תקינה)
